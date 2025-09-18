@@ -1,0 +1,15 @@
+print(f"---Classificador de idades---\n")
+print(f"Digite qualquer idade: \n")
+
+idade = int(input())
+
+if idade < 16:
+    print(f"Você ainda está na infância")
+elif idade >= 16 and idade < 18:
+    print(f"Você ainda está na infância, mas pode votar")
+elif idade >= 18 and idade < 60:
+    print(f"Você está na fase adulta, pode votar e dirigir um carro")
+elif idade > 60:
+    print(f"Você está na fase Sênior")
+else:
+    print(f"provavelmente você errou ao colocar a informação")
