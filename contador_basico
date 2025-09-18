@@ -1,0 +1,9 @@
+print(f"Digite um número:")
+num = int(input())
+cont = 1
+
+print(f"Este número ({num}) será nosso contador.\n")
+print(f"Agora eu direi: 'Eu sou um programador em Python!' {num}x\n")
+while cont <= num: 
+    print(f"Eu sou um programador em Python! {cont}x")
+    cont = cont + 1
