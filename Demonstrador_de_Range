@@ -1,0 +1,7 @@
+print(f"Digite um número:")
+num = int(input())
+
+print(f"Este número ({num}) será nosso valor de range.\n")
+print(f"Agora contarei {num} valores a partir do 0\n")
+for numero in range(num):
+    print(f"O número atual é: {numero}")
