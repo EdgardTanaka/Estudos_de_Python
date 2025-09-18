@@ -1,0 +1,21 @@
+print(f"Olá! Vamos aprender um pouco sobre matemática?\n")
+print(f"Supunhamos que temos em mãos 2 número: x e y\n")
+
+x = int(input("Entre com o valor de x: "))
+y = int(input("Entre com o valor de y: "))
+
+z = x/y
+z1 = x//y
+z2 = x%y
+
+print(f"a divisão dos valores: {x} / {y} = {z}\n")
+print(f"a divisão inteira dos valores: {x} / {y} = {z1}\n")
+print(f"a sobra da divisão: {x} / {y} = {z2}\n")
+if x>y:
+    print(f"O valor de x é maior que y\n")
+else:
+    print(f"O valor de y é maior que x\n")
+if z2 == 0:
+    print(f"O valor x é divisível por y\n")
+else:
+    print(f"O valor x não é divisível por y\n")
