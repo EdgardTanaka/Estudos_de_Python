@@ -1,0 +1,17 @@
+# Calculador de tabuada
+
+while True: 
+    while True:
+        try:
+            valor = int(input("Entre com um valor inteiro:"))
+            break            
+        except ValueError:
+            print(f"Inválido. Tente um número inteiro")
+    
+    for cont in range(11):
+        multi = int(valor * cont)
+        print(f"{valor} x {cont} = {multi}")
+    repetir = input("Gostaria de repetir o processo? (S/N)\n")
+    
+  if repetir.lower() != 's':
+        break 
