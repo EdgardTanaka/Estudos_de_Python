@@ -1,0 +1,31 @@
+#O sistema de segurança da biblioteca da cidade 
+# precisa de uma forma simples de verificar as senhas dos funcionários.
+#  Crie um programa que tenha uma senha pré-definida 
+# no código (por exemplo, "biblioteca123"). O programa deve pedir 
+# ao funcionário para digitar a senha e, se a entrada for correta, 
+# exibir "Acesso Concedido". 
+# Caso contrário, exibir "Acesso Negado".
+##################################################################################
+
+print(f"Digite a senha: ")
+senha = input()
+
+Acesso = "biblioteca123"
+repetir = "s"
+
+if senha == Acesso:
+    print(f"Acesso permitido")
+else:
+    print(f"Senha incorreta, tentar novamente? S/N\n")
+    repetir = input()
+    while repetir == "s" or repetir == "S" or Acesso == senha:
+
+        print(f"Entre com a senha novamente:\n")
+        senha = input()
+        if senha == Acesso:
+            print(f"Acesso permitido")
+            break
+        else:
+            print(f"Senha incorreta\n")
+            print(f"Deseja tentar de novo? S/N")
+            repetir = input()
