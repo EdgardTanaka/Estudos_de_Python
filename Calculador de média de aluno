@@ -1,0 +1,51 @@
+# Calculador de média de aluno
+
+while True:  # Laço infinito para rodar o programa até que o usuário decida parar
+    print(f"Entre com o nome do aluno:\n")
+    aluno = input()
+
+    # Validação de notas:
+    while True:
+        try:
+            n1 = float(input(f"Entre com a primeira nota do aluno(a) {aluno} (0-10): "))
+            if 0 <= n1 <= 10:
+                break
+            else:
+                print("Nota inválida! Por favor, digite uma nota entre 0 e 10.")
+        except ValueError:
+            print("Entrada inválida! Por favor, digite um número.")
+
+    while True:
+        try:
+            n2 = float(input(f"Entre com a segunda nota do aluno(a) {aluno} (0-10): "))
+            if 0 <= n2 <= 10:
+                break
+            else:
+                print("Nota inválida! Por favor, digite uma nota entre 0 e 10.")
+        except ValueError:
+            print("Entrada inválida! Por favor, digite um número.")
+
+    while True:
+        try:
+            n3 = float(input(f"Entre com a terceira nota do aluno(a) {aluno} (0-10): "))
+            if 0 <= n3 <= 10:
+                break
+            else:
+                print("Nota inválida! Por favor, digite uma nota entre 0 e 10.")
+        except ValueError:
+            print("Entrada inválida! Por favor, digite um número.")
+
+    media = (n1 + n2 + n3) / 3
+    print(f"A média final do aluno(a) {aluno} é: {media:.2f}")
+
+    # Lógica condicional otimizada
+    if media >= 7:
+        print(f"Status: Aprovado\n")
+    elif media >= 5:  # Não precisa de `and media < 7`
+        print(f"Status: Em recuperação\n")
+    else: # Por padrão, qualquer média abaixo de 5
+        print(f"Status: Reprovado\n")
+
+    repetir = input("Gostaria de incluir outro aluno? (S/N)\n")
+    if repetir.lower() != 's':
+        break # Sai do laço principal
