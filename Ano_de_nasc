@@ -1,0 +1,9 @@
+nome = input("\nQual o seu nome? ")
+print(f"Olá, {nome}! Bem-vindo ao mundo da programação com Python.\nVamos começar a nossa aventura mágica no mundo da programação")
+
+print(f"Qual a sua idade?\n")
+idade = int(input())
+print(f"\nEm que ano estamos?\n")
+ano = int(input())
+ano_de_nasc = int(ano - idade)
+print(f"Se estamos em {ano} e você tem {idade}, então o ano que você nasceu é {ano_de_nasc}")
