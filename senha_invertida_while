@@ -1,0 +1,9 @@
+#senha invertida
+senha = "segredo"
+senha_invertida = ""
+contador = len(senha)-1
+
+while contador >= 0:
+    senha_invertida += senha[contador]
+    print(senha_invertida)
+    contador -= 1
