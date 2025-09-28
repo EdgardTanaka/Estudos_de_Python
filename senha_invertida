@@ -1,0 +1,7 @@
+#senha invertida
+senha = "segredo"
+senha_invertida = ""
+
+for caractere in senha:
+    senha_invertida = caractere + senha_invertida 
+    print(senha_invertida)
