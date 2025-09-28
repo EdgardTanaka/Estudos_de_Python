@@ -1,0 +1,4 @@
+#senha invertida
+senha = "segredo"
+senha_invertida = senha[::-1]
+print(senha_invertida)
