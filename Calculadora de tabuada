@@ -13,5 +13,5 @@ while True:
         print(f"{valor} x {cont} = {multi}")
     repetir = input("Gostaria de repetir o processo? (S/N)\n")
     
-  if repetir.lower() != 's':
+    if repetir.lower() != "s":
         break 
