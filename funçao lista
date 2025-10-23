@@ -7,8 +7,10 @@ while True:
     if confir.lower() != "s":
          break
 print("-"*35)
+print("Itens na lista:" len(lista_de_compras))# A função len() quantifica a quantidades de itens numa lista
 print (lista_de_compras)
 print("-"*35)
 for item in lista_de_compras: #A varíável item é definida dentro do próprio laço for
     # Imprime o item com um marcador de lista (hífen)
     print(f"- {item}")
+    
