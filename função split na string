@@ -1,0 +1,13 @@
+while True:
+##########################################################
+
+    nome_completo = input("Digite seu nome completo: ")
+    nome_completo_dividido = nome_completo.split(" ") # Gera uma lista a partir variável nome_completo
+    print(nome_completo_dividido[1])
+        
+        
+#########################################################
+    repetir = input("---------\nDeseja repetir? S/N?\n  ")
+    if repetir.lower() != "s":
+        print('---------\n\nAté mais!!\n\n ---------')
+        break
