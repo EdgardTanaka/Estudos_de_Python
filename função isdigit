@@ -1,0 +1,11 @@
+while True:
+    idade = input("Digite sua idade:\n  ")
+    if idade.isdigit():#isdigit verifica se o valor na variável são apenas numeros(útil para inteiros)
+        print(f"Você tem {idade} anos.")
+    else:
+        print("Você digitou uma idade inválida")
+    
+    repetir = input("Deseja repetir? S/N?\n  ")
+    if repetir.lower() != "s":
+        print('---------\n\nAté mais!!\n\n ---------')
+        break
