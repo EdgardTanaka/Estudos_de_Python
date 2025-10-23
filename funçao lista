@@ -1,0 +1,14 @@
+lista_de_compras = []
+        
+while True:
+    novo_item = input("novo item:\n ")
+    lista_de_compras.append(novo_item)
+    confir = input("Adicionar novo item? S/N: \n")
+    if confir.lower() != "s":
+         break
+print("-"*35)
+print (lista_de_compras)
+print("-"*35)
+for item in lista_de_compras: #A varíável item é definida dentro do próprio laço for
+    # Imprime o item com um marcador de lista (hífen)
+    print(f"- {item}")
