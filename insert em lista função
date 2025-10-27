@@ -1,0 +1,18 @@
+lista_de_compras = []
+        
+while True:
+    novo_item = input("novo item. Digite 0 para finalizar:\n ")
+    lista_de_compras.insert(0, novo_item) #insert insere o novo item na lista na posição desejada, 
+#os demais elementos são postos para a direita do elemento
+    
+    if novo_item == "0":
+        del lista_de_compras[0] # deleta o elemento 0 da lista
+        break
+print("-"*35)
+print(f"Itens na lista: {len(lista_de_compras)}") # A função len() quantifica a quantidades de itens numa lista
+print (lista_de_compras)
+print("-"*35)
+for item in lista_de_compras: #A varíável item é definida dentro do próprio laço for
+    # Imprime o item com um marcador de lista (hífen)
+    print(f"- {item}")
+    
