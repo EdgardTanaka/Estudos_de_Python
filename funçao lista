@@ -1,13 +1,12 @@
 lista_de_compras = []
         
 while True:
-    novo_item = input("novo item:\n ")
+    novo_item = input("novo item. Digite 0 para finalizar:\n ")
     lista_de_compras.append(novo_item)
-    confir = input("Adicionar novo item? S/N: \n")
-    if confir.lower() != "s":
+    if novo_item == "0":
          break
 print("-"*35)
-print("Itens na lista:" len(lista_de_compras))# A função len() quantifica a quantidades de itens numa lista
+print(f"Itens na lista: {len(lista_de_compras)}") # A função len() quantifica a quantidades de itens numa lista
 print (lista_de_compras)
 print("-"*35)
 for item in lista_de_compras: #A varíável item é definida dentro do próprio laço for
