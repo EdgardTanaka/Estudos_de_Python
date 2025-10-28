@@ -1,0 +1,18 @@
+lista_cores = ["vermelho", "azul", "verde"]
+
+while True:
+    nova_cor = input("Digite uma nova cor:\n")
+    print("-"*35)
+    if nova_cor.lower() not in lista_cores:
+        addcor = input(f"{nova_cor} não consta na lista, deseja adicionar? S/N\n")
+        print("-"*35)
+        if addcor.lower() == "s":
+            lista_cores.append(nova_cor.lower())
+    else:
+        print(f"{nova_cor} já existe na lista")
+        print("-"*35)
+    confir = input("Adicionar uma nova cor? S/N\n")
+    print("-"*35)
+    if confir.lower() != "s":
+        break
+print(f"Lista de cores atualizada: {lista_cores}")
