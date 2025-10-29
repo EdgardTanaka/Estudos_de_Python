@@ -1,0 +1,27 @@
+lista_email = ["edgard.tanaka@python.com"]
+cont = 1
+
+while True:
+
+    nome = input("Nome completo:\n R: ")
+    print("-"*35)
+    email1 = nome.split()
+    
+    emailcru = email1[0] + "." + email1[-1] + "@python.com"
+    lista_email.append(emailcru.lower())
+    
+   
+    print(f"Email {lista_email[-1]} incluido")
+    saida = input("Novo email? S/N\nR: ")
+    print("-"*35)
+    if saida.lower() != "s":
+        break
+
+
+
+print ("-"*35)
+print (f"Total de emails cadastrados: {len(lista_email)}\n")
+print ("-"*35)
+for email in lista_email:
+    print(f"{cont}. {email}")
+    cont += 1
