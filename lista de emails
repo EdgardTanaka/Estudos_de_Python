@@ -8,10 +8,17 @@ while True:
     email1 = nome.split()
     
     emailcru = email1[0] + "." + email1[-1] + "@python.com"
+    
+    if emailcru in lista_email:
+        emailcru = email1[0] + "." + email1[-1] + f"{len(lista_email)+1}" + "@python.com"
+    
+    
+    
     lista_email.append(emailcru.lower())
     
    
     print(f"Email {lista_email[-1]} incluido")
+    print("-"*35)
     saida = input("Novo email? S/N\nR: ")
     print("-"*35)
     if saida.lower() != "s":
